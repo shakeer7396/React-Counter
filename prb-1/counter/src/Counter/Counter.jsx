@@ -4,8 +4,6 @@ const Counter = () => {
     const [counter,setCounter]=useState(0)
 
     const handleInc= () =>{ setCounter(counter+1)}
-
-   
   return (
     <div>
         <h1>COUNT :- {counter}</h1>

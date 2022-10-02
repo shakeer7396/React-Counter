@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import './App.css';
+import Count from './Counter/Count';
 import Counter from './Counter/Counter';
+import Toggle from './Counter/Toggle';
 
 function App() {
   const [showCounter,setShowCounter]=useState(true);
@@ -11,6 +13,9 @@ function App() {
         {showCounter ? "Hide The Counter" : "Show The Counter"}
       </button>
       {showCounter && <Counter />}
+
+      {/* <Count /> */}
+      <Toggle />
 
     </div>
   );

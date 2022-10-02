@@ -8,7 +8,7 @@ const Counter = () => {
     <div>
         <h1>COUNT :- {counter}</h1>
         <button style={{backgroundColor:"green"}}onClick={handleInc}>INC</button>
-        <button style={{backgroundColor:"orange"}}onClick={()=>setCounter(counter-1)}>DEC</button>
+        <button style={{backgroundColor:"orange"}}onClick={()=>setCounter(counter>0?counter-1:0)}>DEC</button>
     
     </div>
   )

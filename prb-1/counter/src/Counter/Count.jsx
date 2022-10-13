@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 const Count =()=>{
     const [state,setState]=useState(0)
-
+    
     return(
         <>
         <h1>Counter</h1>
